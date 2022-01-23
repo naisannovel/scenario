@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* hide scrollbar */
+::-webkit-scrollbar{
+    width: 0px;
+}
+
 body{
     font-family: 'Outfit', sans-serif;
     background-color: #e8e8e9;
