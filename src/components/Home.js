@@ -10,7 +10,6 @@ const Home = () => {
     const drawerOpenHandler = ()=>{
         setIsOpen(!isOpen)
     }
-    console.log('isOpen ',isOpen);
 
     return (
         <div>
