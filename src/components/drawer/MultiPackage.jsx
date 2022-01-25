@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const MultiPackage = () => {
-
-    const [data, setData] = useState([]);
+const MultiPackage = ({ data, setData }) => {
 
     const dataAndColor = [
         {
@@ -36,10 +34,10 @@ const MultiPackage = () => {
             
             if(isInclude !== -1){
                 newAry.splice(isInclude,1)
-                setData(newAry)
+                setData(prevState => ({...prevState, ourPackages: newAry }))
             }else{
                 newAry.push(selectedPackage)
-                setData(newAry);
+                setData(prevState => ({...prevState, ourPackages: newAry }))
             }
     }
 
