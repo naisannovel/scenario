@@ -3,7 +3,7 @@ import { IoChevronDownOutline } from "react-icons/io5";
 
 const DistrictDropdown = () => {
   return (
-    <div>
+    <div className="mt-6">
       <label className='text-sm'>District</label>
 
       <div className="relative py-3 bg-blue-50 rounded-lg w-full mt-2">

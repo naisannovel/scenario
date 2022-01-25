@@ -4,7 +4,7 @@ import { IoSearchOutline } from "react-icons/io5";
 const DivisonSearchableDropdown = () => {
 
     return (
-        <div>
+        <div className='mt-12'>
             <label className='text-sm'>Division</label>
             <div className='w-full bg-blue-50 rounded-lg py-3 relative mt-2'>
                 <input type="text" name='division' className='w-full mx-4 focus:outline-none bg-transparent text-md placeholder:text-gray-500' placeholder='Type here' />
