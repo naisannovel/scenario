@@ -1,386 +1,388 @@
-[
-    {
-        "id": 1,
-        "code": 452025,
-        "name": "Barguna",
-        "parent_code": 69340
-    },
-    {
-        "id": 2,
-        "code": 969311,
-        "name": "Barisal",
-        "parent_code": 69340
-    },
-    {
-        "id": 3,
-        "code": 405635,
-        "name": "Bhola",
-        "parent_code": 69340
-    },
-    {
-        "id": 4,
-        "code": 172333,
-        "name": "Jhalokathi",
-        "parent_code": 69340
-    },
-    {
-        "id": 5,
-        "code": 214668,
-        "name": "Patuakhali",
-        "parent_code": 69340
-    },
-    {
-        "id": 6,
-        "code": 746883,
-        "name": "Pirojpur",
-        "parent_code": 69340
-    },
-    {
-        "id": 7,
-        "code": 367999,
-        "name": "Chittagong",
-        "parent_code": 32821
-    },
-    {
-        "id": 8,
-        "code": 618575,
-        "name": "Cox's Bazar",
-        "parent_code": 32821
-    },
-    {
-        "id": 9,
-        "code": 194093,
-        "name": "Rangamati",
-        "parent_code": 32821
-    },
-    {
-        "id": 10,
-        "code": 619938,
-        "name": "Bandarban",
-        "parent_code": 32821
-    },
-    {
-        "id": 11,
-        "code": 734125,
-        "name": "Khagrachhari",
-        "parent_code": 32821
-    },
-    {
-        "id": 12,
-        "code": 593564,
-        "name": "Lakshmipur",
-        "parent_code": 32821
-    },
-    {
-        "id": 13,
-        "code": 547997,
-        "name": "Comilla",
-        "parent_code": 32821
-    },
-    {
-        "id": 14,
-        "code": 748092,
-        "name": "Noakhali",
-        "parent_code": 32821
-    },
-    {
-        "id": 15,
-        "code": 612797,
-        "name": "Brahmanbaria ",
-        "parent_code": 32821
-    },
-    {
-        "id": 16,
-        "code": 314571,
-        "name": "Chandpur",
-        "parent_code": 32821
-    },
-    {
-        "id": 17,
-        "code": 379911,
-        "name": "Feni",
-        "parent_code": 32821
-    },
-    {
-        "id": 18,
-        "code": 963462,
-        "name": "Dhaka",
-        "parent_code": 73017
-    },
-    {
-        "id": 19,
-        "code": 627493,
-        "name": "Faridpur",
-        "parent_code": 73017
-    },
-    {
-        "id": 20,
-        "code": 335975,
-        "name": "Gazipur",
-        "parent_code": 73017
-    },
-    {
-        "id": 21,
-        "code": 808840,
-        "name": "Gopalganj",
-        "parent_code": 73017
-    },
-    {
-        "id": 22,
-        "code": 509540,
-        "name": "Kishoreganj",
-        "parent_code": 73017
-    },
-    {
-        "id": 23,
-        "code": 507995,
-        "name": "Madaripur",
-        "parent_code": 73017
-    },
-    {
-        "id": 24,
-        "code": 743611,
-        "name": "Manikganj",
-        "parent_code": 73017
-    },
-    {
-        "id": 25,
-        "code": 301338,
-        "name": "Narayanganj",
-        "parent_code": 73017
-    },
-    {
-        "id": 26,
-        "code": 538868,
-        "name": "Narsingdi",
-        "parent_code": 73017
-    },
-    {
-        "id": 27,
-        "code": 961178,
-        "name": "Rajbari",
-        "parent_code": 73017
-    },
-    {
-        "id": 28,
-        "code": 244409,
-        "name": "Shariatpur",
-        "parent_code": 73017
-    },
-    {
-        "id": 29,
-        "code": 270330,
-        "name": "Tangail",
-        "parent_code": 73017
-    },
-    {
-        "id": 30,
-        "code": 330396,
-        "name": "Khulna",
-        "parent_code": 69263
-    },
-    {
-        "id": 31,
-        "code": 762622,
-        "name": "Bagherhat",
-        "parent_code": 69263
-    },
-    {
-        "id": 32,
-        "code": 345170,
-        "name": "Sathkhira",
-        "parent_code": 69263
-    },
-    {
-        "id": 33,
-        "code": 289106,
-        "name": "Jessore",
-        "parent_code": 69263
-    },
-    {
-        "id": 34,
-        "code": 173409,
-        "name": "Magura",
-        "parent_code": 69263
-    },
-    {
-        "id": 35,
-        "code": 845614,
-        "name": "Jhenaidah",
-        "parent_code": 69263
-    },
-    {
-        "id": 36,
-        "code": 613454,
-        "name": "Narail",
-        "parent_code": 69263
-    },
-    {
-        "id": 37,
-        "code": 984203,
-        "name": "Kushtia",
-        "parent_code": 69263
-    },
-    {
-        "id": 38,
-        "code": 952761,
-        "name": "Chuadanga",
-        "parent_code": 69263
-    },
-    {
-        "id": 39,
-        "code": 255461,
-        "name": "Meherpur",
-        "parent_code": 69263
-    },
-    {
-        "id": 40,
-        "code": 735774,
-        "name": "Mymensingh",
-        "parent_code": 12263
-    },
-    {
-        "id": 41,
-        "code": 658060,
-        "name": "Netrokona",
-        "parent_code": 12263
-    },
-    {
-        "id": 42,
-        "code": 432962,
-        "name": "Jamalpur",
-        "parent_code": 12263
-    },
-    {
-        "id": 43,
-        "code": 557147,
-        "name": "Sherpur",
-        "parent_code": 12263
-    },
-    {
-        "id": 44,
-        "code": 927125,
-        "name": "Bogra",
-        "parent_code": 84950
-    },
-    {
-        "id": 45,
-        "code": 340794,
-        "name": "Chapinawabganj",
-        "parent_code": 84950
-    },
-    {
-        "id": 46,
-        "code": 992582,
-        "name": "Joypurhat",
-        "parent_code": 84950
-    },
-    {
-        "id": 47,
-        "code": 100091,
-        "name": "Naogaon",
-        "parent_code": 84950
-    },
-    {
-        "id": 48,
-        "code": 733701,
-        "name": "Natore",
-        "parent_code": 84950
-    },
-    {
-        "id": 49,
-        "code": 569130,
-        "name": "Pabna",
-        "parent_code": 84950
-    },
-    {
-        "id": 50,
-        "code": 215353,
-        "name": "Rajshahi",
-        "parent_code": 84950
-    },
-    {
-        "id": 51,
-        "code": 935184,
-        "name": "Sirajganj",
-        "parent_code": 84950
-    },
-    {
-        "id": 52,
-        "code": 852063,
-        "name": "Dinajpur",
-        "parent_code": 71841
-    },
-    {
-        "id": 53,
-        "code": 965570,
-        "name": "Gaibandha",
-        "parent_code": 71841
-    },
-    {
-        "id": 54,
-        "code": 368745,
-        "name": "Kurigram",
-        "parent_code": 71841
-    },
-    {
-        "id": 55,
-        "code": 560102,
-        "name": "Lalmonirhat",
-        "parent_code": 71841
-    },
-    {
-        "id": 56,
-        "code": 688156,
-        "name": "Nilphamari",
-        "parent_code": 71841
-    },
-    {
-        "id": 57,
-        "code": 851960,
-        "name": "Panchagarh",
-        "parent_code": 71841
-    },
-    {
-        "id": 58,
-        "code": 653918,
-        "name": "Rangpur",
-        "parent_code": 71841
-    },
-    {
-        "id": 59,
-        "code": 990612,
-        "name": "Thakurgaon",
-        "parent_code": 71841
-    },
-    {
-        "id": 60,
-        "code": 647554,
-        "name": "Hobiganj",
-        "parent_code": 22041
-    },
-    {
-        "id": 61,
-        "code": 890776,
-        "name": "Moulvibazar",
-        "parent_code": 22041
-    },
-    {
-        "id": 62,
-        "code": 753462,
-        "name": "Sunamganj",
-        "parent_code": 22041
-    },
-    {
-        "id": 63,
-        "code": 135995,
-        "name": "Sylhet",
-        "parent_code": 22041
-    },
-    {
-        "id": 64,
-        "code": 541845,
-        "name": "Munshiganj",
-        "parent_code": 73017
-    }
-]
+{
+    "district": [
+        {
+            "id": 1,
+            "code": 452025,
+            "name": "Barguna",
+            "parent_code": 69340
+        },
+        {
+            "id": 2,
+            "code": 969311,
+            "name": "Barisal",
+            "parent_code": 69340
+        },
+        {
+            "id": 3,
+            "code": 405635,
+            "name": "Bhola",
+            "parent_code": 69340
+        },
+        {
+            "id": 4,
+            "code": 172333,
+            "name": "Jhalokathi",
+            "parent_code": 69340
+        },
+        {
+            "id": 5,
+            "code": 214668,
+            "name": "Patuakhali",
+            "parent_code": 69340
+        },
+        {
+            "id": 6,
+            "code": 746883,
+            "name": "Pirojpur",
+            "parent_code": 69340
+        },
+        {
+            "id": 7,
+            "code": 367999,
+            "name": "Chittagong",
+            "parent_code": 32821
+        },
+        {
+            "id": 8,
+            "code": 618575,
+            "name": "Cox's Bazar",
+            "parent_code": 32821
+        },
+        {
+            "id": 9,
+            "code": 194093,
+            "name": "Rangamati",
+            "parent_code": 32821
+        },
+        {
+            "id": 10,
+            "code": 619938,
+            "name": "Bandarban",
+            "parent_code": 32821
+        },
+        {
+            "id": 11,
+            "code": 734125,
+            "name": "Khagrachhari",
+            "parent_code": 32821
+        },
+        {
+            "id": 12,
+            "code": 593564,
+            "name": "Lakshmipur",
+            "parent_code": 32821
+        },
+        {
+            "id": 13,
+            "code": 547997,
+            "name": "Comilla",
+            "parent_code": 32821
+        },
+        {
+            "id": 14,
+            "code": 748092,
+            "name": "Noakhali",
+            "parent_code": 32821
+        },
+        {
+            "id": 15,
+            "code": 612797,
+            "name": "Brahmanbaria ",
+            "parent_code": 32821
+        },
+        {
+            "id": 16,
+            "code": 314571,
+            "name": "Chandpur",
+            "parent_code": 32821
+        },
+        {
+            "id": 17,
+            "code": 379911,
+            "name": "Feni",
+            "parent_code": 32821
+        },
+        {
+            "id": 18,
+            "code": 963462,
+            "name": "Dhaka",
+            "parent_code": 73017
+        },
+        {
+            "id": 19,
+            "code": 627493,
+            "name": "Faridpur",
+            "parent_code": 73017
+        },
+        {
+            "id": 20,
+            "code": 335975,
+            "name": "Gazipur",
+            "parent_code": 73017
+        },
+        {
+            "id": 21,
+            "code": 808840,
+            "name": "Gopalganj",
+            "parent_code": 73017
+        },
+        {
+            "id": 22,
+            "code": 509540,
+            "name": "Kishoreganj",
+            "parent_code": 73017
+        },
+        {
+            "id": 23,
+            "code": 507995,
+            "name": "Madaripur",
+            "parent_code": 73017
+        },
+        {
+            "id": 24,
+            "code": 743611,
+            "name": "Manikganj",
+            "parent_code": 73017
+        },
+        {
+            "id": 25,
+            "code": 301338,
+            "name": "Narayanganj",
+            "parent_code": 73017
+        },
+        {
+            "id": 26,
+            "code": 538868,
+            "name": "Narsingdi",
+            "parent_code": 73017
+        },
+        {
+            "id": 27,
+            "code": 961178,
+            "name": "Rajbari",
+            "parent_code": 73017
+        },
+        {
+            "id": 28,
+            "code": 244409,
+            "name": "Shariatpur",
+            "parent_code": 73017
+        },
+        {
+            "id": 29,
+            "code": 270330,
+            "name": "Tangail",
+            "parent_code": 73017
+        },
+        {
+            "id": 30,
+            "code": 330396,
+            "name": "Khulna",
+            "parent_code": 69263
+        },
+        {
+            "id": 31,
+            "code": 762622,
+            "name": "Bagherhat",
+            "parent_code": 69263
+        },
+        {
+            "id": 32,
+            "code": 345170,
+            "name": "Sathkhira",
+            "parent_code": 69263
+        },
+        {
+            "id": 33,
+            "code": 289106,
+            "name": "Jessore",
+            "parent_code": 69263
+        },
+        {
+            "id": 34,
+            "code": 173409,
+            "name": "Magura",
+            "parent_code": 69263
+        },
+        {
+            "id": 35,
+            "code": 845614,
+            "name": "Jhenaidah",
+            "parent_code": 69263
+        },
+        {
+            "id": 36,
+            "code": 613454,
+            "name": "Narail",
+            "parent_code": 69263
+        },
+        {
+            "id": 37,
+            "code": 984203,
+            "name": "Kushtia",
+            "parent_code": 69263
+        },
+        {
+            "id": 38,
+            "code": 952761,
+            "name": "Chuadanga",
+            "parent_code": 69263
+        },
+        {
+            "id": 39,
+            "code": 255461,
+            "name": "Meherpur",
+            "parent_code": 69263
+        },
+        {
+            "id": 40,
+            "code": 735774,
+            "name": "Mymensingh",
+            "parent_code": 12263
+        },
+        {
+            "id": 41,
+            "code": 658060,
+            "name": "Netrokona",
+            "parent_code": 12263
+        },
+        {
+            "id": 42,
+            "code": 432962,
+            "name": "Jamalpur",
+            "parent_code": 12263
+        },
+        {
+            "id": 43,
+            "code": 557147,
+            "name": "Sherpur",
+            "parent_code": 12263
+        },
+        {
+            "id": 44,
+            "code": 927125,
+            "name": "Bogra",
+            "parent_code": 84950
+        },
+        {
+            "id": 45,
+            "code": 340794,
+            "name": "Chapinawabganj",
+            "parent_code": 84950
+        },
+        {
+            "id": 46,
+            "code": 992582,
+            "name": "Joypurhat",
+            "parent_code": 84950
+        },
+        {
+            "id": 47,
+            "code": 100091,
+            "name": "Naogaon",
+            "parent_code": 84950
+        },
+        {
+            "id": 48,
+            "code": 733701,
+            "name": "Natore",
+            "parent_code": 84950
+        },
+        {
+            "id": 49,
+            "code": 569130,
+            "name": "Pabna",
+            "parent_code": 84950
+        },
+        {
+            "id": 50,
+            "code": 215353,
+            "name": "Rajshahi",
+            "parent_code": 84950
+        },
+        {
+            "id": 51,
+            "code": 935184,
+            "name": "Sirajganj",
+            "parent_code": 84950
+        },
+        {
+            "id": 52,
+            "code": 852063,
+            "name": "Dinajpur",
+            "parent_code": 71841
+        },
+        {
+            "id": 53,
+            "code": 965570,
+            "name": "Gaibandha",
+            "parent_code": 71841
+        },
+        {
+            "id": 54,
+            "code": 368745,
+            "name": "Kurigram",
+            "parent_code": 71841
+        },
+        {
+            "id": 55,
+            "code": 560102,
+            "name": "Lalmonirhat",
+            "parent_code": 71841
+        },
+        {
+            "id": 56,
+            "code": 688156,
+            "name": "Nilphamari",
+            "parent_code": 71841
+        },
+        {
+            "id": 57,
+            "code": 851960,
+            "name": "Panchagarh",
+            "parent_code": 71841
+        },
+        {
+            "id": 58,
+            "code": 653918,
+            "name": "Rangpur",
+            "parent_code": 71841
+        },
+        {
+            "id": 59,
+            "code": 990612,
+            "name": "Thakurgaon",
+            "parent_code": 71841
+        },
+        {
+            "id": 60,
+            "code": 647554,
+            "name": "Hobiganj",
+            "parent_code": 22041
+        },
+        {
+            "id": 61,
+            "code": 890776,
+            "name": "Moulvibazar",
+            "parent_code": 22041
+        },
+        {
+            "id": 62,
+            "code": 753462,
+            "name": "Sunamganj",
+            "parent_code": 22041
+        },
+        {
+            "id": 63,
+            "code": 135995,
+            "name": "Sylhet",
+            "parent_code": 22041
+        },
+        {
+            "id": 64,
+            "code": 541845,
+            "name": "Munshiganj",
+            "parent_code": 73017
+        }
+    ]
+}
