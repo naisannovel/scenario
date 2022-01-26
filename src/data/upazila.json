@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "code": 3785446,
+        "name": "Alikadam",
+        "parent_code": 619938
+    },
+    {
+        "id": 2,
+        "code": 2959915,
+        "name": "Ali kadam",
+        "parent_code": 619938
+    },
+    {
+        "id": 3,
+        "code": 6137479,
+        "name": "Bandarban Sadar",
+        "parent_code": 619938
+    },
+    {
+        "id": 4,
+        "code": 3933498,
+        "name": "Lama",
+        "parent_code": 619938
+    },
+    {
+        "id": 5,
+        "code": 7755110,
+        "name": "Naikhongchhari",
+        "parent_code": 619938
+    },
+    {
+        "id": 6,
+        "code": 3497944,
+        "name": "Roang Chhari",
+        "parent_code": 619938
+    },
+    {
+        "id": 7,
+        "code": 3962053,
+        "name": "Rowangchhari",
+        "parent_code": 619938
+    },
+    {
+        "id": 8,
+        "code": 5106123,
+        "name": "Ruma",
+        "parent_code": 619938
+    },
+    {
+        "id": 9,
+        "code": 9859151,
+        "name": "Thanchi",
+        "parent_code": 619938
+    }
+]
