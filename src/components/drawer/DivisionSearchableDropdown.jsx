@@ -16,7 +16,6 @@ const DivisionSearchableDropdown = ({ data, setData }) => {
         setData(prevState => ({...prevState, division: selectedDivision }))
     }
 
-    // useEffect(()=>setInputValue(data?.name),[data])
 
     let searchData;
 
@@ -42,7 +41,7 @@ const DivisionSearchableDropdown = ({ data, setData }) => {
                 </div>
             )
     }
-console.log(data);
+    
     return (
         <div className='mt-12'>
             <label className='text-sm'>Division</label>

@@ -13,7 +13,9 @@ const DistrictDropdown = ({ divisionData, setData }) => {
   }
 
   const changeHandler = event =>{
-    console.log(event.target.value);
+
+    const selectedDistrict = districtData.district.filter(item => item.code === parseInt(event.target.value));
+    setData(prevState => ({ ...prevState, district: selectedDistrict[0] }));
   }
 
 // console.log(divisionData);

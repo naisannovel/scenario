@@ -11,7 +11,7 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
   const [data,setData] = useState({
     division: {},
     district: {},
-    popularPlace: [''],
+    popularPlace: [],
     ourPackages: []
   })
 
@@ -39,7 +39,7 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
 
              <DivisionSearchableDropdown data={data.division} setData={setData} />
              <DistrictDropdown divisionData={data.division} setData={setData} />
-             <DynamicInput data={data.popularPlace} setData={setData} />
+             <DynamicInput data={data.popularPlace} selectedDistrict={data.district} setData={setData} />
              <MultiPackage  data={data.ourPackages} setData={setData} />
                 </div>
              <hr className='h-0.5 w-full bg-gray-50' />
