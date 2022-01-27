@@ -1,5 +1,6 @@
 import React from "react";
 import { IoChevronDownOutline } from "react-icons/io5";
+import { useEffect } from "react/cjs/react.development";
 import districtData from '../../data/district.json';
 
 const DistrictDropdown = ({ divisionData, setData }) => {
@@ -18,14 +19,13 @@ const DistrictDropdown = ({ divisionData, setData }) => {
     setData(prevState => ({ ...prevState, district: selectedDistrict[0] }));
   }
 
-// console.log(divisionData);
   return (
     <div className="mt-6">
       <label className='text-sm'>District</label>
 
       <div className="relative py-3 bg-blue-50 rounded-lg w-full mt-2">
         <select onChange={(event)=> changeHandler(event)} name="district" id="district"  className='w-full h-full bg-blue-50 rounded-lg px-4 focus:outline-none appearance-none'>
-            <option disabled={true} selected>select district</option>
+            <option selected>select district</option>
             { displayDistrict }
         </select>
         <IoChevronDownOutline className="absolute top-0 right-0 bottom-0 my-auto mr-4 text-2xl text-gray-400" />

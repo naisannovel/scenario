@@ -9,6 +9,7 @@ const DivisionSearchableDropdown = ({ data, setData }) => {
     const onChangeHandler = event => {
         setInputValue(event.target.value);
         setData(prevState => ({...prevState, division: {} }))
+        setData(prevState => ({...prevState, district: {} }))
     }
 
     const selectDivisionHandler = (event, selectedDivision) =>{
