@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { IoSearchOutline } from "react-icons/io5";
 import divisionList from '../../data/division.json';
 

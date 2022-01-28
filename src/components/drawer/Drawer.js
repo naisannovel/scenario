@@ -19,7 +19,14 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
     const { division, district, popularPlace, ourPackages } = data;
 
     const submitHandler = () =>{
-      console.log(data);
+      if(document.cookie.split('=')[1]){
+        const previousScenarioData = JSON.parse(document.cookie.split('=')[1]);
+        const newScenarioDataAry = [...previousScenarioData, data];
+        document.cookie = 'scenarioData =' + JSON.stringify(newScenarioDataAry)
+      }else{
+        document.cookie = 'scenarioData =' + JSON.stringify([data])
+      }
+
       drawerOpenHandler()
     }
 
@@ -43,6 +50,7 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
                 <button className='flex items-center justify-center py-2 px-5 rounded-lg bg-blue-100 hover:bg-blue-100 text-blue-800 text-md focus:outline-none focus:ring-2 ring-offset-1' onClick={drawerOpenHandler}>
                     <IoArrowBack className='mr-1' /> Back</button>
 
+              
              <DivisionSearchableDropdown data={data.division} setData={setData} />
              <DistrictDropdown divisionData={data.division} setData={setData} />
              <DynamicInput data={data.popularPlace} selectedDistrict={data.district} setData={setData} />
