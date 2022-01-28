@@ -3,19 +3,18 @@ import { IoRemoveOutline } from "react-icons/io5";
 import { useEffect } from 'react/cjs/react.development';
 import upazila from '../../data/upazila.json';
 
-const DynamicInput = ({ selectedDistrict }) => {
+const DynamicInput = ({ data, selectedDistrict, setData }) => {
 
-    const [inputValue, setInputValue] = useState(['']);
     const [placesOfSelectedDistrict, setPlacesOfSelectedDistrict] = useState([]);
     const [indexNum, setIndexNum] = useState(null);
     const [filteredPlacesUsingInputValue, setFilteredPlacesUsingInputValue] = useState([]);
     const [togglePlace,setTogglePlace] = useState(true);
 
     const onChangeHandler = (event,index)=>{
-       const newAry = [...inputValue];
+       const newAry = [...data];
        newAry[index] = event.target.value;
        setIndexNum(index);
-       setInputValue(newAry);
+       setData(prevState => ({ ...prevState, popularPlace: newAry }))
        setFilteredPlacesUsingInputValue([])
 
     
@@ -28,28 +27,26 @@ const DynamicInput = ({ selectedDistrict }) => {
     }
 
     const incrementInputField = () =>{
-        const newAry = [...inputValue];
-        const removeEmptyInput = newAry.filter(item => item !== '') 
-        setInputValue( [...removeEmptyInput, ''] );
+        const newAry = [...data];
+        const removeEmptyInput = newAry.filter(item => item !== '')
+        setData(prevState => ({ ...prevState, popularPlace: [...removeEmptyInput, ''] }))
     }
 
     const removeInput = (item, index) =>{
-        const remainInput = inputValue.filter((item,i)=> i !== index );
-        setInputValue(prevState => remainInput);
+        const remainInput = data.filter((item,i)=> i !== index );
+        setData(prevState => ({ ...prevState, popularPlace: remainInput }))
     }
 
     const selectedPlacesHandler = item =>{
-        const newAry = [...inputValue];
+        const newAry = [...data];
        newAry[indexNum] = item?.name;
        const uniq = [ ...new Set(newAry) ]
-
-       setInputValue(uniq);
+       setData(prevState => ({ ...prevState, popularPlace: uniq }))
        setTogglePlace(false);
-    //    const removeSelectedPlace = placesOfSelectedDistrict.filter(element => element?.name?.toLowerCase() !== item?.name.toString().toLowerCase());
-    //    setPlacesOfSelectedDistrict([...removeSelectedPlace])
     }
   
     useEffect(()=>{
+        setData(prevState => ({ ...prevState, popularPlace: [''] }))
            const filteredPlacesByDistrict = upazila.upazila.filter(item => item.parent_code === selectedDistrict.code);
            setPlacesOfSelectedDistrict([...filteredPlacesByDistrict])
     },[selectedDistrict])
@@ -67,12 +64,12 @@ const DynamicInput = ({ selectedDistrict }) => {
         }
             </div>
     }
-    console.log(inputValue);
+
     return (
         <div className='mt-6'>
             <label className='text-sm'>Popular Place</label>
             {
-                inputValue.map((item, index)=>(
+                data.map((item, index)=>(
                     <div className='mt-3 mb-3 flex items-center justify-between' key={index}>
                 <div className='relative w-4/5'>
                 <input type="text" onChange={(event)=>onChangeHandler(event,index)} value={item} className='w-full border border-blue-200 rounded-lg py-3 px-4 focus:outline-none bg-transparent text-md placeholder:text-gray-500' placeholder={`Popular Place ${index + 1}`} />
@@ -88,7 +85,7 @@ const DynamicInput = ({ selectedDistrict }) => {
                 
 
 
-                { inputValue.length > 1 && <div onClick={()=>removeInput(item, index)} className='h-12 w-12 flex items-center justify-center rounded-full border hover:bg-red-600 hover:text-white'><IoRemoveOutline className='w-6 h-6' /></div> }
+                { data.length > 1 && <div onClick={()=>removeInput(item, index)} className='h-12 w-12 flex items-center justify-center rounded-full border hover:bg-red-600 hover:text-white'><IoRemoveOutline className='w-6 h-6' /></div> }
 
                 
 
@@ -96,7 +93,7 @@ const DynamicInput = ({ selectedDistrict }) => {
                 ))
             }
             {
-                inputValue.length !== 0 && <button onClick={incrementInputField} className='w-4/5 border-dashed border-2 border-blue-200 rounded-lg py-3 px-4 font-medium text-gray-500 focus:outline-none bg-transparent text-md placeholder:text-gray-500 disabled:opacity-60' disabled={ !inputValue[inputValue.length-1].length }>+ add a place</button>
+                data.length !== 0 && <button onClick={incrementInputField} className='w-4/5 border-dashed border-2 border-blue-200 rounded-lg py-3 px-4 font-medium text-gray-500 focus:outline-none bg-transparent text-md placeholder:text-gray-500 disabled:opacity-60' disabled={ !data[data.length-1].length }>+ add a place</button>
             }
         </div>
     );

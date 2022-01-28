@@ -16,6 +16,9 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
   })
 
     const bodyRef = useRef(document.querySelector("body"));
+    const { division, district, popularPlace, ourPackages } = data;
+
+    const submitHandler = 
 
     // Prevent page scrolling when the drawer is open
     useEffect(() => {
@@ -29,6 +32,8 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
     
         updatePageScroll();
       }, [isOpen]);
+
+      console.log(data);
 
     return ReactDom.createPortal(
                  <div className={`fixed overflow-y-scroll w-2/6 h-full bg-white shadow-2xl shadow-gray-400 rounded-tl-2xl overflow-hidden top-0 right-0 z-50 transition duration-1000 ease-in-out ${ isOpen ? '':'translate-x-full' }`}>
@@ -45,7 +50,7 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
              <hr className='h-0.5 w-full bg-gray-50' />
              <div class="container w-3/4 m-12 flex items-center justify-evenly">
              <button onClick={drawerOpenHandler}  className='flex items-center justify-center py-2 px-6 rounded-lg bg-blue-100 hover:bg-blue-200 text-blue-800 text-md focus:outline-none focus:ring-2'>Cancel</button>
-             <button className='flex items-center justify-center py-2 px-7 rounded-lg bg-blue-600 text-white hover:bg-blue-700 text-md focus:outline-none focus:ring-2 ring-offset-1'>Submit</button>
+             <button onClick={submitHandler} disabled={ !(division?.code && district?.code && popularPlace[0].length >= 1 && ourPackages.length) } className='flex items-center justify-center py-2 px-7 rounded-lg bg-blue-600 text-white hover:bg-blue-700 text-md focus:outline-none focus:ring-2 ring-offset-1 disabled:cursor-not-allowed'>Submit</button>
              </div>
              </div>
     ,document.getElementById('drawer'));

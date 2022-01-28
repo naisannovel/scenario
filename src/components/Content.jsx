@@ -2,7 +2,7 @@ import React from 'react';
 import ContentCard from './ContentCard';
 
 const Content = () => {
-
+    console.log('content');
     return (
         <main className='container bg-white m-auto mt-6 pb-16'>
             <div className='flex items-center justify-around p-8'>
