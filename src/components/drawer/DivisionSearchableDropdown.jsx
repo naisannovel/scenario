@@ -47,7 +47,7 @@ const DivisionSearchableDropdown = ({ data, setData }) => {
         <div className='mt-12'>
             <label className='text-sm'>Division</label>
             <div className='w-full bg-blue-50 rounded-lg py-3 relative mt-2'>
-                <input type="text" onChange={(event)=> onChangeHandler(event)} value={ inputValue } name='division' className='w-full mx-4 focus:outline-none bg-transparent text-md placeholder:text-gray-500' placeholder='Type here' />
+                <input type="text" onChange={(event)=> onChangeHandler(event)} value={ inputValue } className='w-full mx-4 focus:outline-none bg-transparent text-md placeholder:text-gray-500' placeholder='Type here' />
                 <IoSearchOutline className='absolute top-0 right-0 bottom-0 my-auto mr-4 text-xl text-gray-400' />
 
                 

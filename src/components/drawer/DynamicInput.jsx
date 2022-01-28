@@ -57,7 +57,7 @@ const DynamicInput = ({ data, selectedDistrict, setData }) => {
         <div className='absolute top-full left-0 w-full text-sm z-50'>
         {
             displayPlaceItems = filteredPlacesUsingInputValue.map(item => (
-                <div onClick={()=>selectedPlacesHandler(item)} className='py-2 bg-white hover:bg-blue-50 border-b border-l border-r hover:border-r-0 hover:border-l-0 cursor-pointer'>
+                <div onClick={()=>selectedPlacesHandler(item)} key={item?.id} className='py-2 bg-white hover:bg-blue-50 border-b border-l border-r hover:border-r-0 hover:border-l-0 cursor-pointer'>
                     <p className='px-4'> { item?.name } </p>
                 </div>
         ))

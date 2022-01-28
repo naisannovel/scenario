@@ -48,7 +48,7 @@ const MultiPackage = ({ data, setData }) => {
                 {
                     dataAndColor.map(({ packageNum, color, amount },index)=>(
                         <div className='mt-6 mb-8 flex items-center justify-between px-4' key={index}>
-                <label for={`package${packageNum}`} className='flex'>
+                <label htmlFor={`package${packageNum}`} className='flex'>
                     <div className={`h-12 w-12 bg-${ color }-100 rounded-lg`}></div>
                     <div className='flex flex-col justify-around ml-3'>
                         <h4 className={`text-${ color }-500 text-sm font-semibold`}>Package { packageNum }</h4>
