@@ -14,9 +14,11 @@ const DynamicInput = ({ selectedDistrict }) => {
     const onChangeHandler = (event,index)=>{
        const newAry = [...inputValue];
        newAry[index] = event.target.value;
-       setInputValue(newAry);
        setIndexNum(index);
+       setInputValue(newAry);
        setFilteredPlacesUsingInputValue([])
+
+    
 
        if(newAry[index].length !== 0){
            const filteredPlace = placesOfSelectedDistrict.filter(item => item?.name.toString().toLowerCase().startsWith(newAry[index].toString().toLowerCase()))
@@ -39,12 +41,14 @@ const DynamicInput = ({ selectedDistrict }) => {
     const selectedPlacesHandler = item =>{
         const newAry = [...inputValue];
        newAry[indexNum] = item?.name;
-       setInputValue(newAry);
-       setTogglePlace(false);
-       const removeSelectedPlace = placesOfSelectedDistrict.filter(element => element?.name?.toLowerCase() !== item?.name.toString().toLowerCase());
-       setPlacesOfSelectedDistrict([...removeSelectedPlace])
-    }
+       const uniq = [ ...new Set(newAry) ]
 
+       setInputValue(uniq);
+       setTogglePlace(false);
+    //    const removeSelectedPlace = placesOfSelectedDistrict.filter(element => element?.name?.toLowerCase() !== item?.name.toString().toLowerCase());
+    //    setPlacesOfSelectedDistrict([...removeSelectedPlace])
+    }
+  
     useEffect(()=>{
            const filteredPlacesByDistrict = upazila.upazila.filter(item => item.parent_code === selectedDistrict.code);
            setPlacesOfSelectedDistrict([...filteredPlacesByDistrict])
@@ -63,7 +67,7 @@ const DynamicInput = ({ selectedDistrict }) => {
         }
             </div>
     }
-    
+    console.log(inputValue);
     return (
         <div className='mt-6'>
             <label className='text-sm'>Popular Place</label>
@@ -84,7 +88,7 @@ const DynamicInput = ({ selectedDistrict }) => {
                 
 
 
-                { inputValue.length > 1 && <div className='h-12 w-12 flex items-center justify-center rounded-full border hover:bg-red-600 hover:text-white'><IoRemoveOutline onClick={()=>removeInput(item, index)} className='w-6 h-6' /></div> }
+                { inputValue.length > 1 && <div onClick={()=>removeInput(item, index)} className='h-12 w-12 flex items-center justify-center rounded-full border hover:bg-red-600 hover:text-white'><IoRemoveOutline className='w-6 h-6' /></div> }
 
                 
 

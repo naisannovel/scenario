@@ -11,7 +11,7 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
   const [data,setData] = useState({
     division: {},
     district: {},
-    popularPlace: [],
+    popularPlace: [''],
     ourPackages: []
   })
 
