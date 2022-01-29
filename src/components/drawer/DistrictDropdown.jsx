@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { IoChevronDownOutline } from "react-icons/io5";
 import { scenarioDataContext } from "../../App";
 import districtData from "../../data/district.json";
@@ -6,11 +6,12 @@ import districtData from "../../data/district.json";
 const DistrictDropdown = () => {
   const [{ division }, setScenarioData] = useContext(scenarioDataContext);
 
+  const [filteredDistrictListByDivision, setFilteredDistrictListByDivision] = useState([]);
+
   let displayDistrict;
 
   if (division.code !== undefined) {
-    const districtList = districtData.district.filter(item => item.parent_code === division?.code);
-    displayDistrict = districtList.map((item) => (
+    displayDistrict = filteredDistrictListByDivision.map((item) => (
       <option value={item?.code} key={item?.id}> {item?.name} </option>
     ));
   }
@@ -22,6 +23,12 @@ const DistrictDropdown = () => {
       district: selectedDistrict[0],
     }));
   };
+
+  useEffect(()=>{
+    setScenarioData((prevState) => ({ ...prevState, district: {} }));
+    const districtList = districtData.district.filter(item => item.parent_code === division?.code);
+    setFilteredDistrictListByDivision([...districtList])
+  },[division])
 
   return (
     <div className="mt-6">

@@ -23,12 +23,7 @@ const DivisionSearchableDropdown = () => {
   let displayFoundedDivision;
 
   if (division?.code === undefined && division?.name !== "") {
-    const filterData = divisionList.division.filter((item) =>
-      item.name
-        .toString()
-        .toLowerCase()
-        .startsWith(division?.name.toString().toLowerCase())
-    );
+    const filterData = divisionList.division.filter((item) => item.name.toString().toLowerCase().startsWith(division?.name.toString().toLowerCase()));
 
     filterData.length
       ? (displayFoundedDivision = filterData.map((item, index) => (

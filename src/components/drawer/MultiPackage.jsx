@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { scenarioDataContext } from '../../App';
 
-const MultiPackage = ({ data, setData }) => {
+const MultiPackage = () => {
+
+    const [{ ourPackages }, setScenarioData] = useContext(scenarioDataContext);
 
     const dataAndColor = [
         {
@@ -27,23 +30,23 @@ const MultiPackage = ({ data, setData }) => {
     
     const handleToggleCheckbox = index =>{
 
-        const newAry = [...data]
+        const newAry = [...ourPackages]
         const selectedPackage = dataAndColor[index];
 
-            const isInclude = data.findIndex(item => item.packageNum === selectedPackage.packageNum);
+            const isInclude = ourPackages.findIndex(item => item.packageNum === selectedPackage.packageNum);
             
             if(isInclude !== -1){
                 newAry.splice(isInclude,1)
-                setData(prevState => ({...prevState, ourPackages: newAry }))
+                setScenarioData(prevState => ({...prevState, ourPackages: newAry }))
             }else{
                 newAry.push(selectedPackage)
-                setData(prevState => ({...prevState, ourPackages: newAry }))
+                setScenarioData(prevState => ({...prevState, ourPackages: newAry }))
             }
     }
 
     return (
         <div className='mt-6'>
-            <label className='text-sm'>Packages</label>
+            <h4 className='text-sm'>Packages</h4>
             
                 {
                     dataAndColor.map(({ packageNum, color, amount },index)=>(

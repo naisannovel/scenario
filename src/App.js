@@ -11,7 +11,7 @@ function App() {
     places: [''],
     ourPackages: []
   })
-
+  
   return (
     <scenarioDataContext.Provider value={[ scenarioData, setScenarioData ]}>
       <Home/>
