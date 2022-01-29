@@ -1,32 +1,36 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useContext } from 'react';
 import ReactDom from 'react-dom';
 import { IoArrowBack } from "react-icons/io5";
 import DistrictDropdown from './DistrictDropdown';
 import DivisionSearchableDropdown from './DivisionSearchableDropdown';
 import DynamicInput from './DynamicInput';
 import MultiPackage from './MultiPackage';
+import { scenarioDataContext } from '../../App';
 
 const Drawer = ({ isOpen, drawerOpenHandler }) => {
 
-  const [data,setData] = useState({
-    division: {},
-    district: {},
-    popularPlace: [''],
-    ourPackages: []
-  })
+  const [scenarioData, setScenarioData] = useContext(scenarioDataContext);
+
+  // const [data,setData] = useState({
+  //   division: {},
+  //   district: {},
+  //   popularPlace: [''],
+  //   ourPackages: []
+  // })
 
     const bodyRef = useRef(document.querySelector("body"));
-    const { division, district, popularPlace, ourPackages } = data;
+    const { division, district, popularPlace, ourPackages } = scenarioData;
 
     const submitHandler = () =>{
       if(document.cookie.split('=')[1]){
         const previousScenarioData = JSON.parse(document.cookie.split('=')[1]);
-        const newScenarioDataAry = [...previousScenarioData, data];
+        const newScenarioDataAry = [...previousScenarioData, scenarioData];
         document.cookie = 'scenarioData =' + JSON.stringify(newScenarioDataAry)
       }else{
-        document.cookie = 'scenarioData =' + JSON.stringify([data])
+        document.cookie = 'scenarioData =' + JSON.stringify([scenarioData])
       }
 
+      // After submitHandler drawer will be close
       drawerOpenHandler()
     }
 
@@ -51,10 +55,10 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
                     <IoArrowBack className='mr-1' /> Back</button>
 
               
-             <DivisionSearchableDropdown data={data.division} setData={setData} />
-             <DistrictDropdown divisionData={data.division} setData={setData} />
-             <DynamicInput data={data.popularPlace} selectedDistrict={data.district} setData={setData} />
-             <MultiPackage  data={data.ourPackages} setData={setData} />
+             <DivisionSearchableDropdown />
+             <DistrictDropdown />
+             <DynamicInput />
+             {/* <MultiPackage  data={data.ourPackages} setData={setData} /> */}
                 </div>
              <hr className='h-0.5 w-full bg-gray-50' />
              <div className="container w-3/4 m-12 flex items-center justify-evenly">
