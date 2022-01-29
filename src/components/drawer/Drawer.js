@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useContext } from 'react';
+import React, { useEffect, useRef, useContext } from 'react';
 import ReactDom from 'react-dom';
 import { IoArrowBack } from "react-icons/io5";
 import DistrictDropdown from './DistrictDropdown';
@@ -11,13 +11,6 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
 
   const [scenarioData, setScenarioData] = useContext(scenarioDataContext);
 
-  // const [data,setData] = useState({
-  //   division: {},
-  //   district: {},
-  //   popularPlace: [''],
-  //   ourPackages: []
-  // })
-
     const bodyRef = useRef(document.querySelector("body"));
     const { division, district, places, ourPackages } = scenarioData;
 
@@ -29,6 +22,14 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
       }else{
         document.cookie = 'scenarioData =' + JSON.stringify([scenarioData])
       }
+
+      // clear state
+      setScenarioData({
+        division: { name: '' },
+        district: {},
+        places: [''],
+        ourPackages: []
+      })
 
       // After submitHandler drawer will be close
       drawerOpenHandler()
