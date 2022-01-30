@@ -91,6 +91,7 @@ const DynamicInput = () => {
             <div className="absolute top-full left-0 w-full text-sm z-50">
               { filteredPlacesUsingInputValue.length !== 0 && indexNum === index && displayPlaceItems }
             </div>
+            
           </div>
 
           {places.length > 1 && (

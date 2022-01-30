@@ -15,4 +15,4 @@ const Header = ({ drawerOpenHandler }) => {
   );
 };
 
-export default Header;
+export default React.memo(Header);
