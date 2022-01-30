@@ -54,7 +54,7 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
 
     return ReactDom.createPortal(
                   <div className='w-full h-full relative'>
-                    <div className={`fixed overflow-y-scroll w-full sm:w-4/6 md:w-3/6 lg:w-2/6 h-full bg-white shadow-2xl shadow-gray-400 rounded-tl-2xl overflow-hidden top-0 right-0 z-50 transition duration-1000 ease-in-out ${ isOpen ? '':'translate-x-full' }`}>
+                    <div className={`fixed overflow-y-scroll w-full sm:w-4/6 md:w-3/6 lg:w-2/6 h-full bg-white shadow-2xl shadow-gray-400 rounded-none sm:rounded-tl-2xl overflow-hidden top-0 right-0 z-50 transition duration-1000 ease-in-out ${ isOpen ? '':'translate-x-full' }`}>
                       <div className="container w-3/4 m-12">
                           <button 
                             className='flex items-center justify-center py-2 px-5 rounded-lg bg-blue-100 hover:bg-blue-100 text-blue-800 text-md focus:outline-none focus:ring-2 ring-offset-1' 
