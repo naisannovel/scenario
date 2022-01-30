@@ -41,7 +41,7 @@ const DivisionSearchableDropdown = () => {
           </div>
         ));
   }
-
+  
   return (
     <div className="mt-12">
       <h4 className="text-sm">Division</h4>

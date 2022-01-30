@@ -29,7 +29,7 @@ const DistrictDropdown = () => {
     const districtList = districtData.district.filter(item => item.parent_code === division?.code);
     setFilteredDistrictListByDivision([...districtList])
   },[division])
-
+  
   return (
     <div className="mt-6">
       <h4 className="text-sm">District</h4>
