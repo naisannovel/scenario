@@ -1,6 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { IoRemoveOutline } from "react-icons/io5";
-import { useEffect } from "react/cjs/react.development";
 import { scenarioDataContext } from "../../App";
 import popularPlaces from "../../data/popularPlaces.json";
 
