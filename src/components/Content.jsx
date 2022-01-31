@@ -20,7 +20,7 @@ const Content = () => {
         }else{
             displayData = <h4 className='text-3xl font-bold opacity-30'>No Data Found</h4>
         }
-
+        
     return (
         <main className='container bg-white m-auto mt-6 pb-16'>
             <div className='flex flex-col sm:flex-row items-center justify-around p-8'>

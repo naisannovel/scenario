@@ -53,6 +53,150 @@
             "code": 9859151,
             "name": "Thanchi",
             "parent_code": 619938
+        },
+        {
+            "id": 10,
+            "code": 1978291,
+            "name": "Rangamati Sadar",
+            "parent_code": 194093
+        },
+        {
+            "id": 11,
+            "code": 7036549,
+            "name": "Kaptai",
+            "parent_code": 194093
+        },
+        {
+            "id": 12,
+            "code": 2440567,
+            "name": "Kaukhali",
+            "parent_code": 194093
+        },
+        {
+            "id": 13,
+            "code": 6762681,
+            "name": "Nannerchar",
+            "parent_code": 194093
+        },
+        {
+            "id": 14,
+            "code": 9987870,
+            "name": "Bagaichhari",
+            "parent_code": 194093
+        },
+        {
+            "id": 15,
+            "code": 4009281,
+            "name": "Juraichhari",
+            "parent_code": 194093
+        },
+        {
+            "id": 16,
+            "code": 8720139,
+            "name": "Rajasthali",
+            "parent_code": 194093
+        },
+        {
+            "id": 17,
+            "code": 1720425,
+            "name": "Belaichhari",
+            "parent_code": 194093
+        },
+        {
+            "id": 18,
+            "code": 6260558,
+            "name": "Barkal",
+            "parent_code": 194093
+        },
+        {
+            "id": 19,
+            "code": 8005176,
+            "name": "Langadu",
+            "parent_code": 194093
+        },
+        {
+            "id": 20,
+            "code": 4381108,
+            "name": "Rangunia",
+            "parent_code": 367999
+        },
+        {
+            "id": 21,
+            "code": 3049772,
+            "name": "Patiya",
+            "parent_code": 367999
+        },
+        {
+            "id": 22,
+            "code": 3044651,
+            "name": "Raozan",
+            "parent_code": 367999
+        },
+        {
+            "id": 23,
+            "code": 5443252,
+            "name": "Sandwip",
+            "parent_code": 367999
+        },
+        {
+            "id": 24,
+            "code": 2149426,
+            "name": "Satkania",
+            "parent_code": 367999
+        },
+        {
+            "id": 25,
+            "code": 4762693,
+            "name": "Sitakunda",
+            "parent_code": 367999
+        },
+        {
+            "id": 26,
+            "code": 9754455,
+            "name": "Anwara",
+            "parent_code": 367999
+        },
+        {
+            "id": 27,
+            "code": 7582140,
+            "name": "Banshkhali",
+            "parent_code": 367999
+        },
+        {
+            "id": 28,
+            "code": 1375951,
+            "name": "Boalkhali",
+            "parent_code": 367999
+        },
+        {
+            "id": 29,
+            "code": 9933526,
+            "name": "Chandanaish",
+            "parent_code": 367999
+        },
+        {
+            "id": 30,
+            "code": 2096918,
+            "name": "Fatikchhari",
+            "parent_code": 367999
+        },
+        {
+            "id": 31,
+            "code": 8821586,
+            "name": "Hathazari",
+            "parent_code": 367999
+        },
+        {
+            "id": 32,
+            "code": 9974919,
+            "name": "Lohagara",
+            "parent_code": 367999
+        },
+        {
+            "id": 33,
+            "code": 4927402,
+            "name": "Mirsharai",
+            "parent_code": 367999
         }
     ]
 }

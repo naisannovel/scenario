@@ -38,7 +38,7 @@ const DistrictDropdown = () => {
           onChange={(event) => changeHandler(event)}
           className="w-full h-full bg-blue-50 rounded-lg px-4 focus:outline-none appearance-none"
         >
-          <option defaultValue={""}>select district</option>
+          <option className="text-gray-500" defaultValue={""}>select district</option>
           {displayDistrict}
         </select>
         <IoChevronDownOutline className="absolute top-0 right-0 bottom-0 my-auto mr-4 text-2xl text-gray-400" />

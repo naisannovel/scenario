@@ -6,6 +6,7 @@ import DivisionSearchableDropdown from './DivisionSearchableDropdown';
 import DynamicInput from './DynamicInput';
 import MultiPackage from './MultiPackage';
 import { cookieDataContext, scenarioDataContext } from '../../App';
+import swal from 'sweetalert';
 
 const Drawer = ({ isOpen, drawerOpenHandler }) => {
 
@@ -34,6 +35,9 @@ const Drawer = ({ isOpen, drawerOpenHandler }) => {
         places: [''],
         ourPackages: []
       })
+
+      // alert after successfully add
+      swal("successfully added!", "", "success");
 
       // After form submit drawer will be close
       drawerOpenHandler()

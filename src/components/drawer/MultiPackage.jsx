@@ -52,7 +52,7 @@ const MultiPackage = () => {
           key={index}
         >
           <label htmlFor={`package${packageNum}`} className="flex">
-            <div className={`h-12 w-12 bg-${color}-100 rounded-lg`}></div>
+            <div className={`h-12 w-12 bg-orange-100 rounded-lg`}></div>
             <div className="flex flex-col justify-around ml-3">
               <h4 className={`text-${color}-500 text-sm font-semibold`}>
                 Package {packageNum}
