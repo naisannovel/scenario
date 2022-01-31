@@ -27,10 +27,7 @@ const DynamicInput = () => {
   const incrementInputField = () => {
     const newAry = [...places];
     const removeEmptyInputField = newAry.filter(item => item !== "");
-    setScenarioData((prevState) => ({
-      ...prevState,
-      places: [...removeEmptyInputField, ""],
-    }));
+    setScenarioData(prevState => ({ ...prevState, places: [...removeEmptyInputField, ""]}));
   };
 
   const removeInput = (item, index) => {
